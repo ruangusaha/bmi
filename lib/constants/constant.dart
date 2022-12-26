@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 const Color primaryColor=Colors.black;
 TextStyle labelTextStyle=const TextStyle(
 fontSize: 18,
-color: Colors.yellow,
+color: primaryColor,
+);
+TextStyle labelTextStyle2=const TextStyle(
+fontSize: 18,
+color: Colors.blue,
 );
 TextStyle numberTextStyle=const TextStyle(fontSize: 50,fontWeight: FontWeight.bold,color: Colors.white,);
 const String underweightSevere="Underweight (Severe thinnes)";

@@ -1,3 +1,4 @@
+import 'package:bmi/constants/constant.dart';
 import 'package:bmi/helpers/bmi_calculator.dart';
 import 'package:bmi/views/bmi_data_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class BmiResultScreen extends StatelessWidget {
     (
       appBar: AppBar
       (
-        title: const Text("Hasil Perhitungan BMI"),
+        title: const Center(child:  Text("HASIL PERHITUNGAN")),
       ),
       body: Column
       (
@@ -31,7 +32,7 @@ class BmiResultScreen extends StatelessWidget {
               child: Text
               (
                 "Hasil Perhitungan",
-                style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,color: Colors.white),
+                style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: primaryColor),
               ),
             ),
           ),
@@ -48,15 +49,15 @@ class BmiResultScreen extends StatelessWidget {
                 [
                   Text(
                     bmiCalculator.bmiCategory??"",
-                    style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),
+                    style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: primaryColor),
                     ),
                   Text(
                     bmi.toStringAsFixed(1),
-                    style: const TextStyle(fontSize: 100,fontWeight: FontWeight.bold,color: Colors.white),
+                    style: const TextStyle(fontSize: 100,fontWeight: FontWeight.bold,color: primaryColor),
                     ),
                   Text(
                     bmiCalculator.bmiDescription??"",
-                    style: const TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),
+                    style: const TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: primaryColor),
                     ),
                 ],
               ),
@@ -71,7 +72,7 @@ class BmiResultScreen extends StatelessWidget {
               },
               child: Container(
                 height: 80,
-                color: const Color.fromARGB(255, 244, 16, 12),
+                color: const Color(0xff517DF6),
                 child: const Center(child: Text("Hitung Ulang",style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold))),
               ),
             ),

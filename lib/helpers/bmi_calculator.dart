@@ -8,9 +8,7 @@ class BmiCalculator{
   String? bmiDescription;
 
   BmiCalculator({required this.height, required this.weight});
-  BmiCalculator.fromBmiValue(this.bmi){
-    
-  }
+  BmiCalculator.fromBmiValue(this.bmi);
 
   double calculateBmi(){
     double heightInMeter=height!/100;
